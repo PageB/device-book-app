@@ -1,0 +1,8 @@
+.toolbar-image {
+  height: 60px;
+  text-align: center;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: white;
+}

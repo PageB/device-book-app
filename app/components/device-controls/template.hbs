@@ -1,0 +1,10 @@
+{{#paper-select class="device-controls__select" options=teams required=true label="Teams" selected=team onChange=(action (mut team)) as |team|}}
+  {{team.name}}
+{{/paper-select}}
+{{#paper-select class="device-controls__select" options=team.members required=true label="Members" selected=member onChange=(action (mut member)) as |member|}}
+  {{member}}
+{{/paper-select}}
+{{#paper-dialog-actions class="layout-row layout-align-center-center"}}
+  {{#paper-button primary=true disabled=bookingIsDisabled onClick=(action "confirm" member)}}Book!{{/paper-button}}
+  {{#paper-button primary=true onClick=(action "cancel" device)}}Cancel{{/paper-button}}
+{{/paper-dialog-actions}}

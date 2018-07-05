@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <header>
+    {{nav-bar}}
+  </header>
+  <main>
+    {{!-- Refactor in a child index route --}}
+    {{device-list devices=model.devices teams=model.teams}}
+    {{outlet}}
+  </main>
+  {{#if showModal}}
+    {{!-- bookDevice should be injected from parent component --}}
+    {{modal-dialog device=device teams=model.teams onCancel=(route-action "closeModal") onConfirm=(route-action "bookDevice" device)}}
+  {{/if}}
+  {{!-- <footer>
+
+  </footer> --}}
+</div>

@@ -1,0 +1,52 @@
+.device-card {
+  width: 320px;
+  height: 590px;
+
+  &__device-status-off {
+    width: 80px;
+    background: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__device-status-on {
+    width: 80px;
+    background: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__image-holder {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 260px;
+  }
+
+  &__phone-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__booked-image {
+    position: absolute;
+    top: 90px;
+
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__text-ios {
+    font-size: 14px;
+  }
+
+  &__controls {
+    padding: 0px 16px;
+  }
+}

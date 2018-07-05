@@ -1,0 +1,55 @@
+body {
+  font-size: 18px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+
+  // By default Ember wraps templates in div.ember-view
+  // fixes vertical scroll on mobile devices
+  > .ember-view {
+    height: 100%;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: column ;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 68px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  margin-bottom: 8px;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: stretch;
+  height: 68px;
+  background-color: white;
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+}

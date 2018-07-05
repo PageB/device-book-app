@@ -1,0 +1,36 @@
+{{#paper-card class="device-card" as |card|}}
+  <div class="device-card__image-holder">
+    <img class="device-card__phone-image" src={{device.imgURL}} alt="Device image">
+    {{!-- {{#if device.isBooked}}
+      <img class="device-card__booked-image" src='assets/images/booked.png' alt="Device is booked">
+    {{/if}} --}}
+  </div>
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{#text.headline class="device-card__text-name"}}{{device.name}}{{/text.headline}}
+      {{#if device.isBooked}}
+        <p class="device-card__device-status-off">Booked</p>
+      {{else}}
+        <p class="device-card__device-status-on">Available</p>
+      {{/if}}
+      <p>{{device.os}} - {{device.osVersion}}</p>
+    {{/title.text}}
+  {{/card.title}}
+  {{#card.content class="device-card__controls"}}
+    {{#if device.isBooking}}
+      {{device-controls device=device teams=teams onCancel=(action "hideControls" device) onConfirm=(action "bookDevice" device)}}
+    {{else}}
+      <p>Booked by: {{device.bookedBy}}</p>
+      <p>Date of book: {{moment-format device.dateOfBook 'DD/MM/YYYY'}}</p>
+    {{/if}}
+  {{/card.content}}
+  {{#card.actions class="layout-column"}}
+    {{#if device.isBooked}}
+      {{#paper-button onClick=(action "returnDevice" device)}}Return Device{{/paper-button}}
+    {{else}}
+      {{#unless device.isBooking}}
+        {{#paper-button onClick=(action "showControls" device)}}Book Device{{/paper-button}}
+      {{/unless}}
+    {{/if}}
+  {{/card.actions}}
+{{/paper-card}}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DeviceBook</title>
+    <meta name="description" content="Device book application">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <!-- look for #manual in ember-cli-build -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <noscript> <style> figure noscript { top: 0; left: 0; position: absolute; } </style> </noscript>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Packt PWA Note">
+
+    <link rel="apple-touch-startup-image" href="{{rootURL}}assets/images/icons/device-book-icon.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{rootURL}}assets/images/icons/device-book-icon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="{{rootURL}}assets/images/icons/device-book-icon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="{{rootURL}}assets/images/icons/device-book-icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="{{rootURL}}assets/images/icons/device-book-icon.png">
+    <meta name="msapplication-TileColor" content="#ffa105">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Theme color for mobile users -->
+    <meta name="theme-color" content="#ffa105">
+
+    <!-- Manifest.json-->
+    <link rel="manifest" href="{{rootURL}}manifest.json">
+
+    {{content-for "head"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/device-book.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    <noscript>
+      <style> #enable-js { margin: 0; padding: 12px 15px; background-color: #FFC107; color: #000; text-align: center; font-family: "Arial"; font-size: 13px; } </style>
+      <p id="enable-js">Enable JavaScript in your browser for better experience. <a href="#">Here is how.</a></p>
+    </noscript>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/device-book.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
