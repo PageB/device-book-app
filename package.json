@@ -16,7 +16,6 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@octopusdeploy/octopackjs": "0.0.7",
     "broccoli-asset-rev": "^2.4.5",
     "broccoli-serviceworker": "^0.1.6",
     "ember-ajax": "^3.0.0",
@@ -48,9 +47,7 @@
     "ember-service-worker-index": "^0.6.9",
     "ember-source": "~2.16.0",
     "loader.js": "^4.2.3",
-    "md5": "^2.2.1",
-    "octopus-deploy": "^4.0.0",
-    "zip-local": "^0.3.4"
+    "md5": "^2.2.1"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
