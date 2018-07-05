@@ -5,10 +5,12 @@ export default Service.extend({
     this._super(...arguments);
 
     const config = {
-      apiKey: "AIzaSyCTybj5jbz4CsJg5rlwOh3kuPQUUWA1M3M",
-      authDomain: "device-book-7ba04.firebaseapp.com",
-      databaseURL: "https://device-book-7ba04.firebaseio.com",
-      projectId: "device-book-7ba04",
+      apiKey: "AIzaSyBDu0kHh4lf4kE7kidnAgn3LmwlMYph7JY",
+      authDomain: "device-book-c16c5.firebaseapp.com",
+      databaseURL: "https://device-book-c16c5.firebaseio.com",
+      projectId: "device-book-c16c5",
+      storageBucket: "device-book-c16c5.appspot.com",
+      messagingSenderId: "761477734989"
     };
 
     this.initializeFirebaseApp(config);

@@ -1,0 +1,7 @@
+<p class="device-card__text-name">{{device.name}}</p>
+  {{#if device.isBooked}}
+    <p class="device-card__device-status-off">Booked</p>
+  {{else}}
+    <p class="device-card__device-status-on">Available</p>
+  {{/if}}
+<p>{{device.os}} - {{device.osVersion}}</p>
