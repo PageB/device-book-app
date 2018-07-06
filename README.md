@@ -7,6 +7,9 @@ Progressive Web App with EmberJS
 * Firebase Deploy integration
 * Ember-paper components integration
 
+Lighthouse report:
+![Logo](http://ember-simple-auth.com/images/Lighthouse_report.jpg)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
