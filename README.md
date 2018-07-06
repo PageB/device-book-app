@@ -1,11 +1,11 @@
 # device-book-app
 Progressive Web App with EmberJS
 
-PWA setup
-ServiceWorkers setup
-Firebase Database integration
-Firebase Deploy integration
-Ember-paper components integration
+* PWA setup
+* ServiceWorkers setup
+* Firebase Database integration
+* Firebase Deploy integration
+* Ember-paper components integration
 
 ## Prerequisites
 
