@@ -8,6 +8,7 @@ Progressive Web App with EmberJS
 * Ember-paper components integration
 
 Lighthouse report:
+
 ![Logo](http://ember-simple-auth.com/images/Lighthouse_report.jpg)
 
 ## Prerequisites
