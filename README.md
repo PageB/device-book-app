@@ -9,7 +9,7 @@ Progressive Web App with EmberJS
 
 Lighthouse report:
 
-![Logo](http://ember-simple-auth.com/images/Lighthouse_report.jpg)
+![Logo](https://device-book-c16c5.firebaseapp.com/assets/images/Lighthouse_report.png)
 
 ## Prerequisites
 
